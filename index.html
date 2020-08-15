@@ -2,11 +2,21 @@
 <html>
   <head>
     <script>
+    var cookiecheck;
     if(document.cookie!==NaN)
     {
       alert('你好！'+document.cookie)
     }
     else
     {
-      
+      cookiecheck = prompt('please enter your name!');
+      document.cookie = cookiecheck;
+      return;
     }
+    </script>
+  </head>
+  <body>
+    <h1>Login page!</h1>
+    <script>document.write('name:'+cookiecheck);</script>
+  </body>
+</html>
